@@ -22,9 +22,8 @@ def calc_exact_ee(N, seed_qsk, alpha):
     exact_s2, exact_svn, exact_spec = calculate_entanglement(ground_state_vec, N) 
     return hi, exact_s2, exact_svn, exact_spec
 
-def define_model_load_vstate(N, hi, seed_qsk, alpha, seed_nqs):
-    path = f'qsk_N={N}/seed_qsk={seed_qsk}/seed={seed_nqs}'
-    
+def define_model_load_vstate(N, hi, seed_qsk, alpha, seed_nqs, 
+                            path = f'qsk_N={N}/seed_qsk={seed_qsk}/seed={seed_nqs}'): 
     ############################## RBM ##################################
     model_rbm = nk.models.RBM(alpha=alpha) 
     vstate_rbm = nk.vqs.MCState(sampler = nk.sampler.MetropolisLocal(hi), 
