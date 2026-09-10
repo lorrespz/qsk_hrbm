@@ -106,7 +106,7 @@ def netket_pipeline(n_fermions, model, sampler, op, vstate, optimizer, iter_num,
         plt.xlabel('Iteration')
         plt.ylabel('Energy')
         plt.legend()
-        plt.title('SYK NQS Convergence')
+        plt.title('QSK NQS Convergence')
         plt.grid(True, alpha=0.3)
         plt.show()
     else:
