@@ -113,7 +113,7 @@ def define_model_load_vstate(N, hi, seed_qsk, alpha, seed_nqs, base_dir="."):
     ############################## HRBM ##################################
     k = 1.0
     Lmax = 10
-    model_hrbm = HyperbolicRBMd_Coupled(alpha=alpha, k=k, Lmax=Lmax)
+    model_hrbm = HyperbolicRBM(alpha=alpha, k=k, Lmax=Lmax)
     vstate_hrbm = nk.vqs.MCState(
         sampler=nk.sampler.MetropolisLocal(hi),
         model=model_hrbm,
