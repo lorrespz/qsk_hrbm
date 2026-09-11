@@ -49,9 +49,9 @@ class ExplicitEuclideanRBM(nn.Module):
         return visible_term + hidden_term
 
 ###################################################################################################
-# Current HRBM construction
+# HRBM construction
 ###################################################################################################
-class HyperbolicRBMd_Coupled(nn.Module):
+class HyperbolicRBM(nn.Module):
     alpha: float = 4.0         
     k: float = 1.0             
     Lmax: float = 50.0          
