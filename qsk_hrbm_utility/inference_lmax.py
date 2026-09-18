@@ -294,7 +294,7 @@ def entanglement_extraction(
     spectra_rows = []
 
     for seed_qsk in seed_qsk_list:
-        hi, exact_s2, exact_svn, exact_spec = calc_exact_ee(N, seed_qsk, alpha)
+        hi, exact_s2, exact_svn, exact_spec = calc_exact_ee(N, seed_qsk, alpha, path)
         exact_sorted = np.sort(exact_spec)[::-1]
 
         metrics_rows.append(
