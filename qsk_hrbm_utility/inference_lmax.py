@@ -51,6 +51,7 @@ def find_checkpoint_dir(base_dir, N, seed_qsk, seed_nqs):
         os.path.join(base_dir, f"qsk_seed={seed_qsk}_nqs_seed={seed_nqs}"),
         os.path.join(base_dir, f"qsk_seed={seed_qsk}", f"nqs_seed={seed_nqs}"),
         os.path.join(base_dir, f"qsk_N={N}"),
+        os.path.join(base_dir, f"qsk_N={N}_final"),
         base_dir,
     ]
 
